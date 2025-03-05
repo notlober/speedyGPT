@@ -13,7 +13,7 @@ https://github.com/KellerJordan/modded-nanogpt
 to run current code:
 
 ```python
-pip install --pre --upgrade torch --index-url https://download.pytorch.org/whl/nightly/cu128
+pip install --pre --upgrade torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
 pip install tiktoken datasets tqdm numpy huggingface-hub --no-deps # do not modify torch installation with --no-deps
 huggingface-cli login --token hf_xxxx # your token here, to save checkpoint to hf
 # modify code line at train_gpt.py: "repo_id="yourname/yourrepo" to your preferred hf repo
